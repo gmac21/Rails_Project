@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cinema_id: 1
+  movie_id: 1
+  seats: MyString
+  handicap_accesibility: MyString
+  scree_size: MyString
+  date_start_showing: 2016-02-07
+  date_end_showing: 2016-02-07
+  time_showing: 2016-02-07
+
+two:
+  cinema_id: 1
+  movie_id: 1
+  seats: MyString
+  handicap_accesibility: MyString
+  scree_size: MyString
+  date_start_showing: 2016-02-07
+  date_end_showing: 2016-02-07
+  time_showing: 2016-02-07

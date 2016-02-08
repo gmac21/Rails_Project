@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @theatre.name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @theatre.address %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @theatre.cost %>
+</p>
+
+<p>
+  <strong>Phone number:</strong>
+  <%= @theatre.phone_number %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @theatre.email %>
+</p>
+
+<%= link_to 'Edit', edit_theatre_path(@theatre) %> |
+<%= link_to 'Back', theatres_path %>

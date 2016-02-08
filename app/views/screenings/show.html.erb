@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cinema:</strong>
+  <%= @screening.cinema_id %>
+</p>
+
+<p>
+  <strong>Movie:</strong>
+  <%= @screening.movie_id %>
+</p>
+
+<p>
+  <strong>Seats:</strong>
+  <%= @screening.seats %>
+</p>
+
+<p>
+  <strong>Handicap accesibility:</strong>
+  <%= @screening.handicap_accesibility %>
+</p>
+
+<p>
+  <strong>Scree size:</strong>
+  <%= @screening.scree_size %>
+</p>
+
+<p>
+  <strong>Date start showing:</strong>
+  <%= @screening.date_start_showing %>
+</p>
+
+<p>
+  <strong>Date end showing:</strong>
+  <%= @screening.date_end_showing %>
+</p>
+
+<p>
+  <strong>Time showing:</strong>
+  <%= @screening.time_showing %>
+</p>
+
+<%= link_to 'Edit', edit_screening_path(@screening) %> |
+<%= link_to 'Back', screenings_path %>

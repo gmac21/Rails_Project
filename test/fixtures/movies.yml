@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  director: MyString
+  genre: MyString
+  release_date: 2016-02-07
+  film_lenght: 2016-02-07 19:21:55
+  trailer: MyString
+
+two:
+  title: MyString
+  director: MyString
+  genre: MyString
+  release_date: 2016-02-07
+  film_lenght: 2016-02-07 19:21:55
+  trailer: MyString
