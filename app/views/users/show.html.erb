@@ -16,6 +16,12 @@
 </p>
 
 <p>
+  <strong>Address:</strong>
+  <%= @user.email %>
+</p>
+
+
+<p>
   <strong>User name:</strong>
   <%= @user.user_name %>
 </p>
@@ -24,6 +30,8 @@
   <strong>Password digest:</strong>
   <%= @user.password_digest %>
 </p>
+
+
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

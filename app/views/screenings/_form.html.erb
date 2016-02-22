@@ -10,34 +10,28 @@
       </ul>
     </div>
   <% end %>
-
+<tr>
   <div class="field">
-    <%= f.label :cinema_id %><br>
-    <%= f.number_field :cinema_id %>
+    <%= f.label :theatre_id %><br>
+    <%= f.collection_select :theatre_id, Theatre.all, :id, :name %>
   </div>
   <div class="field">
     <%= f.label :movie_id %><br>
-    <%= f.number_field :movie_id %>
+    <%= f.collection_select :movie_id, Movie.all, :id, :title %>
   </div>
   <div class="field">
     <%= f.label :seats %><br>
     <%= f.text_field :seats %>
   </div>
-  <div class="field">
-    <%= f.label :handicap_accesibility %><br>
-    <%= f.text_field :handicap_accesibility %>
-  </div>
-  <div class="field">
-    <%= f.label :scree_size %><br>
-    <%= f.text_field :scree_size %>
-  </div>
+  
+  
   <div class="field">
     <%= f.label :date_start_showing %><br>
-    <%= f.date_select :date_start_showing %>
+    <%= f.date_field :date_start_showing %>
   </div>
   <div class="field">
     <%= f.label :date_end_showing %><br>
-    <%= f.date_select :date_end_showing %>
+    <%= f.date_field :date_end_showing %>
   </div>
   <div class="field">
     <%= f.label :time_showing %><br>
@@ -46,4 +40,5 @@
   <div class="actions">
     <%= f.submit %>
   </div>
+  </tr>
 <% end %>

@@ -69,6 +69,6 @@ class ScreeningsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def screening_params
-      params.require(:screening).permit(:cinema_id, :movie_id, :seats, :handicap_accesibility, :scree_size, :date_start_showing, :date_end_showing, :time_showing)
+      params.require(:screening).permit(:theatre_id, :movie_id, :seats, :handicap_accesibility, :scree_size, :date_start_showing, :date_end_showing, :time_showing)
     end
 end

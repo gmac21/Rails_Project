@@ -1,14 +1,25 @@
 Rails.application.routes.draw do
 
+  resources :users
+   get 'pages/home'
+
+  get 'pages/about'
+   
 
   get 'pages/home'
 
   resources :bookings
   resources :theatres
-  resources :users
-  get 'pages/home'
-
-  get 'pages/about'
+  
+ 
+  
+  
+  controller :sessions do
+  get 'login' => :new
+  post 'login' => :create
+  get 'logout' => :destroy
+  delete 'logout' => :destroy 
+  end
 
   resources :screenings
   resources :movies

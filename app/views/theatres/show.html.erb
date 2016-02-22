@@ -25,5 +25,7 @@
   <%= @theatre.email %>
 </p>
 
+<%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x3000&sensor=false&zoom=16&markers=#{@theatre.latitude}%2C#{@theatre.longitude}" %>
+
 <%= link_to 'Edit', edit_theatre_path(@theatre) %> |
 <%= link_to 'Back', theatres_path %>

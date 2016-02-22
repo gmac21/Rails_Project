@@ -5,7 +5,7 @@
 <table>
   <thead>
     <tr>
-      <th>Cinema</th>
+      <th>Theatre</th>
       <th>Movie</th>
       <th>Seats</th>
       <th>Handicap accesibility</th>
@@ -20,8 +20,8 @@
   <tbody>
     <% @screenings.each do |screening| %>
       <tr>
-        <td><%= screening.cinema_id %></td>
-        <td><%= screening.movie_id %></td>
+        <td><%= screening.theatre.name %></td>
+        <td><%= screening.movie.title %></td>
         <td><%= screening.seats %></td>
         <td><%= screening.handicap_accesibility %></td>
         <td><%= screening.scree_size %></td>
